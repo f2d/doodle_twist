@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Doodle twist</title>
+	<link rel="shortcut icon" type="image/png" href="index.png">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="index.js"></script>
+	<script>
+	var	la = {
+			'save': 'Right click to save result image.'
+		,	'points': ' points in '
+		,	'lines': ' lines.'
+		};
+	</script>
+</head>
+<body>
+	<p>Draw something, or <a href = "/">return to main site</a>.</p>
+	<div id="container">
+		<canvas id="canvas" width="480" height="480" title="Click to draw here.">
+			Error: your web-browser is too old and does not have required functions.
+		</canvas>
+	</div>
+	<p>
+		<button onClick="twist()">Restart twisting</button>
+		<button onClick="twist(1)">+</button>
+		<button onClick="twist(10)">+10</button>
+		<button onClick="clearData()">Erase drawing</button>
+	</p>
+	<p id="counter"></p>
+</body>
+</html>

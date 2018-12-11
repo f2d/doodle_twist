@@ -1,0 +1,20 @@
+a {
+	color: #888;
+}
+a:hover {
+	color: #000;
+}
+body {
+	margin: 1em auto;
+	text-align: center;
+}
+canvas {
+	position: relative;
+}
+canvas, img {
+	border: 1px solid #ddd;
+	box-shadow: 3px 3px rgba(0,0,0, 0.1);
+}
+canvas:hover {
+	border-color: #aaa;
+}

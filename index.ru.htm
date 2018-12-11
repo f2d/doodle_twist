@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Разброс каракулей</title>
+	<link rel="shortcut icon" type="image/png" href="index.png">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="index.js"></script>
+	<script>
+	var	la = {
+			'save': 'Кликните правой кнопкой, чтобы сохранить результат.'
+		,	'points': ' точек в '
+		,	'lines': ' линиях.'
+		};
+	</script>
+</head>
+<body>
+	<p>Нарисуйте тут что-нибудь, или <a href = "/">назад на главную страницу</a>.</p>
+	<div id="container">
+		<canvas id="canvas" width="480" height="480" title="Кликайте сюда, чтобы рисовать.">
+			Ошибка: ваша программа устарела и не имеет необходимых функций.
+		</canvas>
+	</div>
+	<p>
+		<button onClick="twist()">Разбросать заново</button>
+		<button onClick="twist(1)">+</button>
+		<button onClick="twist(10)">+10</button>
+		<button onClick="clearData()">Стереть рисунок</button>
+	</p>
+	<p id="counter"></p>
+</body>
+</html>
