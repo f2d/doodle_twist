@@ -4,7 +4,6 @@
 function gc(n,p) {try {return TOS.slice.call((p || document).getElementsByClassName(n) || []);} catch(e) {return [];}}
 function gt(n,p) {try {return TOS.slice.call((p || document).getElementsByTagName(n) || []);} catch(e) {return [];}}
 function gn(n,p) {try {return TOS.slice.call((p || document).getElementsByName(n) || []);} catch(e) {return [];}}
-function gi(n,p) {try {return TOS.slice.call((p || document).getElementsById(n) || []);} catch(e) {return [];}}
 function id(i) {return document.getElementById(i);}
 
 //* Page-specific functions *--------------------------------------------------
